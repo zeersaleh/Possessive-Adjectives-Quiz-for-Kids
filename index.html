@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possessive Adjectives Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-green-200 min-h-screen flex flex-col items-center justify-start pt-12">
+    <h1 class="text-3xl font-semibold text-blue-700 mb-8">Possessive Adjectives Quiz</h1>
+
+    <div id="quiz-container" class="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
+        <form id="quiz-form" class="space-y-6">
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Edward and I have got bikes. <span class="font-semibold">____</span> bikes are red.</p>
+                <select name="q1" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Our">Our</option>
+                    <option value="Their">Their</option>
+                    <option value="His">His</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Frank has got two dogs. <span class="font-semibold">____</span> dogs are old.</p>
+                <select name="q2" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="His">His</option>
+                    <option value="Her">Her</option>
+                    <option value="Their">Their</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">I have got a computer. <span class="font-semibold">____</span> computer is new.</p>
+                <select name="q3" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="My">My</option>
+                    <option value="Your">Your</option>
+                    <option value="Its">Its</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Kim and Martin have got a car. <span class="font-semibold">____</span> car is nice.</p>
+                <select name="q4" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Our">Our</option>
+                    <option value="Their">Their</option>
+                    <option value="His">His</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Amy has got jeans. <span class="font-semibold">____</span> jeans are blue.</p>
+                <select name="q5" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Her">Her</option>
+                    <option value="His">His</option>
+                    <option value="Its">Its</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Billy has got a camera. <span class="font-semibold">____</span> camera is expensive.</p>
+                <select name="q6" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="His">His</option>
+                    <option value="Her">Her</option>
+                    <option value="Their">Their</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Dave and Dora have got a house. <span class="font-semibold">____</span> house is big.</p>
+                <select name="q7" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Their">Their</option>
+                    <option value="Our">Our</option>
+                    <option value="His">His</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">Fred and I have got an English teacher. <span class="font-semibold">____</span> teacher is good.</p>
+                <select name="q8" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Our">Our</option>
+                    <option value="Their">Their</option>
+                    <option value="Your">Your</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p class="text-lg font-medium text-gray-800">You have got a mobile phone. <span class="font-semibold">____</span> mobile phone is new.</p>
+                <select name="q9" required class="mt-2 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Select...</option>
+                    <option value="Your">Your</option>
+                    <option value="My">My</option>
+                    <option value="Its">Its</option>
+                </select>
+            </div>
+
+            <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+                Submit Answers
+            </button>
+        </form>
+
+        <div id="results-container" class="hidden mt-8 p-6 bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg shadow-md border border-purple-200">
+            <h2 class="text-2xl font-semibold text-purple-700 mb-4 text-center">Results</h2>
+            <p id="final-score" class="text-lg text-gray-800 text-center mb-4"></p>
+            <div id="emojis" class="text-center text-4xl mb-4"></div>
+            <p id="congratulations" class="text-xl font-semibold text-green-600 text-center mb-4"></p>
+            <div class="text-center">
+                <a href="https://www.instagram.com/saleh__zeer/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out">
+                    <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 0 12.63 8 4 4 0 0 0 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Follow on Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById('quiz-form');
+        const resultsContainer = document.getElementById('results-container');
+        const finalScoreDisplay = document.getElementById('final-score');
+        const emojisDisplay = document.getElementById('emojis');
+        const congratulationsDisplay = document.getElementById('congratulations');
+
+        quizForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const answers = {
+                q1: quizForm.q1.value,
+                q2: quizForm.q2.value,
+                q3: quizForm.q3.value,
+                q4: quizForm.q4.value,
+                q5: quizForm.q5.value,
+                q6: quizForm.q6.value,
+                q7: quizForm.q7.value,
+                q8: quizForm.q8.value,
+                q9: quizForm.q9.value,
+            };
+
+            let score = 0;
+            if (answers.q1 === 'Our') score++;
+            if (answers.q2 === 'His') score++;
+            if (answers.q3 === 'My') score++;
+            if (answers.q4 === 'Their') score++;
+            if (answers.q5 === 'Her') score++;
+            if (answers.q6 === 'His') score++;
+            if (answers.q7 === 'Their') score++;
+            if (answers.q8 === 'Our') score++;
+            if (answers.q9 === 'Your') score++;
+
+            finalScoreDisplay.textContent = `Your score: ${score} / 9`;
+            resultsContainer.classList.remove('hidden');
+
+            if (score >= 7) {
+                emojisDisplay.textContent = '🎉🌟🎈🥳👏';
+                congratulationsDisplay.textContent = 'Congratulations! You did great!';
+            } else if (score >= 4) {
+                emojisDisplay.textContent = '😊👍👌';
+                congratulationsDisplay.textContent = 'Good job! Keep practicing!';
+            } else {
+                emojisDisplay.textContent = '😟😔😓';
+                congratulationsDisplay.textContent = 'Keep studying, you\'ll improve!';
+            }
+        });
+    </script>
+</body>
+</html>
